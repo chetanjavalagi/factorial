@@ -1,3 +1,4 @@
+import sys
 def factorial_iterative(n):
     if n < 0:
         raise ValueError("Factorial is not defined for negative numbers.")
@@ -6,4 +7,5 @@ def factorial_iterative(n):
         result *= i
     return result
 
-print(factorial_iterative(5)) 
+a = int(sys.argv[1])
+print(factorial_iterative(a)) 
